@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Multimodule</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+    #grayrow
+{
+background:gray;
+font:17 px "Times New Roman", serif;
+color:#000000;
+}
+
+#orangerow
+{
+background:orange;
+font:17 px "Times New Roman", serif;
+color:#000000;
+}
+
+#yellowrow
+{
+background:yellow;
+font:17 px "Times New Roman", serif;
+color:#000000;
+}
+    
+    </style>
+</head>
+<body>
+   <table border="1">
+<tr id="yellowrow">
+<td>
+Welcome Message
+</td>
+<td>
+Account Details 
+</td>
+</tr>
+
+<tr id="orangerow">
+<td>
+<span th:text="${message}" />
+</td>
+<td>
+<span th:text="${account}" />
+</td>
+</tr>
+
+
+</table>
+  
+</body>
+</html>
